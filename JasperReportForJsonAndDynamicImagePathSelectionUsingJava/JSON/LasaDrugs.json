@@ -1,0 +1,64 @@
+{
+	"hospitalName": "BMC HOSPITAL",
+	"address": "Pune,Maharashtra 410022",
+	"look": [
+		{
+			"srNo": "1",
+			"drug": "Inj. MANNITOL"
+		},
+		{
+			"srNo": "2",
+			"drug": "Inj. DEXTROSE 25%"
+		},
+		{
+			"srNo": "3",
+			"drug": "Inj. PORTWIN"
+		},
+		{
+			"srNo": "4",
+			"drug": "Inj. VASOPRESSIN"
+		},
+		{
+			"srNo": "5",
+			"drug": "Inj. PAUSE"
+		},
+		{
+			"srNo": "6",
+			"drug": "Inj. AVIL "
+		},
+		{
+			"srNo": "7",
+			"drug": "Inj. DOBUTAMINE"
+		}
+	],
+	"sound": [
+		{
+			"srNo": "1",
+			"drug": "Inj. ADRENALINE"
+		},
+		{
+			"srNo": "2",
+			"drug": "Inj. ATROPINE"
+		},
+		{
+			"srNo": "3",
+			"drug": "Inj. ADRENALINE"
+		},
+		{
+			"srNo": "4",
+			"drug": "Inj. NORADRENALINE"
+		},
+		{
+			"srNo": "5",
+			"drug": "Inj. DOPAMINE"
+		},
+		{
+			"srNo": "6",
+			"drug": "Inj. AMINOPHYLLINE"
+		},
+		{
+			"srNo": "7",
+			"drug": "Inj. SCOLINE"
+		}
+	]
+}

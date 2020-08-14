@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.13.0.final using JasperReports Library version 6.13.0-46ada4d1be8f3c5985fd0b6146f3ed44caed6f05  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="LasaDrugs" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="ec756798-8663-4c08-bcc0-e02c1afa8050">
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="One Empty Record"/>
+	<style name="Table_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TH" mode="Opaque" backcolor="#F0F8FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_CH" mode="Opaque" backcolor="#BFE1FF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<style name="Table 1_TD" mode="Opaque" backcolor="#FFFFFF">
+		<box>
+			<pen lineWidth="0.5" lineColor="#000000"/>
+			<topPen lineWidth="0.5" lineColor="#000000"/>
+			<leftPen lineWidth="0.5" lineColor="#000000"/>
+			<bottomPen lineWidth="0.5" lineColor="#000000"/>
+			<rightPen lineWidth="0.5" lineColor="#000000"/>
+		</box>
+	</style>
+	<subDataset name="SoundsAlikeDrugs" uuid="9306dea5-d9b7-4aa0-9d3f-9d23aa18ef78">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="srNo" class="java.lang.String"/>
+		<field name="drug" class="java.lang.String"/>
+	</subDataset>
+	<subDataset name="LooksALike" uuid="a7697c05-2370-4183-9737-994a228f735d">
+		<queryString>
+			<![CDATA[]]>
+		</queryString>
+		<field name="srNo" class="java.lang.String"/>
+		<field name="drug" class="java.lang.String"/>
+	</subDataset>
+	<parameter name="logo" class="Object" isForPrompting="false">
+		<parameterDescription><![CDATA[The letterhead image]]></parameterDescription>
+		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
+	</parameter>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="hospitalName" class="java.lang.String"/>
+	<field name="address" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="98" splitType="Stretch">
+			<line>
+				<reportElement x="0" y="82" width="555" height="1" uuid="ca74ae70-e39f-46ea-b403-a404e2265564"/>
+				<graphicElement>
+					<pen lineWidth="2.0"/>
+				</graphicElement>
+			</line>
+			<textField>
+				<reportElement x="162" y="17" width="230" height="29" uuid="cf063a86-2f32-4891-98b5-a5e6c6f075f3"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="16" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{hospitalName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="157" y="47" width="240" height="30" uuid="528d5e50-0428-487d-ba58-4279436bc0cb"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="11" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{address}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement x="0" y="0" width="80" height="77" uuid="f2039e05-5580-4b14-94b0-260d1b225f59"/>
+				<imageExpression><![CDATA[$P{logo}]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<detail>
+		<band height="95" splitType="Stretch">
+			<componentElement>
+				<reportElement x="0" y="0" width="555" height="90" uuid="b1bb5c9e-aae1-4183-8a67-4a3c88c19489">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="LooksALike" uuid="487c040a-a561-4ec8-87f3-7e8c1f8c56ce">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("look")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="555" uuid="96000622-cf4c-4b03-9992-84a07fa03142">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+						<jr:columnGroup width="555" uuid="dd4fee26-fb56-40a4-871e-0f0c5e414671">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+							<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement mode="Opaque" x="0" y="0" width="555" height="30" forecolor="#FFFFFF" backcolor="#116900" uuid="4e7a6800-ac6a-42cf-82e6-4d7eda6c4334"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="16" isBold="true"/>
+									</textElement>
+									<text><![CDATA[LOOKS ALIKE DRUGS]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:column width="70" uuid="993524c9-c734-4519-a7a4-64ca8bcd4b23">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+								<jr:columnHeader style="Table 1_CH" height="30" rowSpan="2">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="70" height="30" backcolor="#FFFFFF" uuid="4302e44a-6e29-4085-9dc6-503bcdea7ba3"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font size="16"/>
+										</textElement>
+										<text><![CDATA[Sr. No ]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table 1_TD" height="30">
+									<textField>
+										<reportElement x="0" y="0" width="70" height="30" uuid="080c5348-a1b3-4a75-b8bf-bc249fdfb9f4"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font size="14"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{srNo}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:columnGroup width="485" uuid="7b7434b6-a7b3-4eff-bae5-f5f6f3de6d83">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+								<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="485" height="30" backcolor="#FFFFFF" uuid="8a5f380c-1822-4cf5-a7d6-82e1d8980d1d"/>
+										<textElement textAlignment="Center">
+											<font size="16"/>
+										</textElement>
+										<text><![CDATA[DRUGS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="240" uuid="abd08260-7f15-4d41-9133-844b37e4f0a2">
+									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+									<jr:columnHeader style="Table 1_CH" height="0" rowSpan="1"/>
+									<jr:detailCell style="Table 1_TD" height="30">
+										<textField>
+											<reportElement x="0" y="0" width="240" height="30" uuid="673727d0-f0e6-463f-9a17-88aec23b5d4a"/>
+											<textElement textAlignment="Center" verticalAlignment="Middle">
+												<font size="14"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{drug}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="245" uuid="28cddbb5-bb95-4097-bb5d-8ae70bb33269">
+									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+									<jr:columnHeader style="Table 1_CH" height="0" rowSpan="1"/>
+									<jr:detailCell style="Table 1_TD" height="30">
+										<textField>
+											<reportElement x="0" y="0" width="245" height="30" uuid="6e34a064-dc10-474f-babe-a05b1288bc8c"/>
+											<textElement textAlignment="Center" verticalAlignment="Middle">
+												<font size="14"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{drug}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+		<band height="99">
+			<componentElement>
+				<reportElement x="0" y="0" width="555" height="90" uuid="a560c4ff-5a7d-4f2a-89aa-feff430a861a">
+					<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.VerticalRowLayout"/>
+					<property name="com.jaspersoft.studio.table.style.table_header" value="Table 1_TH"/>
+					<property name="com.jaspersoft.studio.table.style.column_header" value="Table 1_CH"/>
+					<property name="com.jaspersoft.studio.table.style.detail" value="Table 1_TD"/>
+				</reportElement>
+				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<datasetRun subDataset="SoundsAlikeDrugs" uuid="afe2f030-9d8d-4754-b94b-70204c87bd94">
+						<dataSourceExpression><![CDATA[((net.sf.jasperreports.engine.data.JsonDataSource)$P{REPORT_DATA_SOURCE}).subDataSource("sound")]]></dataSourceExpression>
+					</datasetRun>
+					<jr:columnGroup width="555" uuid="b1d676b2-0bc1-4143-9bad-d58893e0b6b8">
+						<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+						<jr:columnGroup width="555" uuid="448f45fe-1adb-43d4-ba30-046bb6002958">
+							<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [3]"/>
+							<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+								<staticText>
+									<reportElement mode="Opaque" x="0" y="0" width="555" height="30" forecolor="#0A0100" backcolor="#FFF700" uuid="5d9e6c5b-6095-4dc9-ab14-95b13d804f73"/>
+									<textElement textAlignment="Center" verticalAlignment="Middle">
+										<font size="16" isBold="true"/>
+									</textElement>
+									<text><![CDATA[LOOKS ALIKE DRUGS]]></text>
+								</staticText>
+							</jr:columnHeader>
+							<jr:column width="70" uuid="d10f4ee0-a184-42d8-8e31-d1fc8489686e">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column1"/>
+								<jr:columnHeader style="Table 1_CH" height="30" rowSpan="2">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="70" height="30" uuid="f47398d9-24a4-44da-a2bc-026a5687a012"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font size="16"/>
+										</textElement>
+										<text><![CDATA[Sr. No]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:detailCell style="Table 1_TD" height="30">
+									<textField>
+										<reportElement x="0" y="0" width="70" height="30" uuid="032308a5-814d-4aee-a6cc-5b681c52dfe8"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font size="14"/>
+										</textElement>
+										<textFieldExpression><![CDATA[$F{srNo}]]></textFieldExpression>
+									</textField>
+								</jr:detailCell>
+							</jr:column>
+							<jr:columnGroup width="485" uuid="219224bf-7a82-4350-a2f0-766b738fad58">
+								<property name="com.jaspersoft.studio.components.table.model.column.name" value="Columns [2]"/>
+								<jr:columnHeader style="Table 1_CH" height="30" rowSpan="1">
+									<staticText>
+										<reportElement mode="Opaque" x="0" y="0" width="485" height="30" uuid="99528c5f-c6e6-42f5-819b-600242f3c08a"/>
+										<textElement textAlignment="Center" verticalAlignment="Middle">
+											<font size="16"/>
+										</textElement>
+										<text><![CDATA[DRUGS]]></text>
+									</staticText>
+								</jr:columnHeader>
+								<jr:column width="240" uuid="25dcc4a2-2acf-4990-b0d6-4ab8a763d609">
+									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column2"/>
+									<jr:columnHeader style="Table 1_CH" height="0" rowSpan="1"/>
+									<jr:detailCell style="Table 1_TD" height="30">
+										<textField>
+											<reportElement x="0" y="0" width="240" height="30" uuid="3b7efb07-1de8-41ad-aa10-8a5d3ed8f8f7"/>
+											<textElement textAlignment="Center" verticalAlignment="Middle">
+												<font size="14"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{drug}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+								<jr:column width="245" uuid="c614329f-e0e7-43de-a8df-6725d7873633">
+									<property name="com.jaspersoft.studio.components.table.model.column.name" value="Column3"/>
+									<jr:columnHeader style="Table 1_CH" height="0" rowSpan="1"/>
+									<jr:detailCell style="Table 1_TD" height="30">
+										<textField>
+											<reportElement x="0" y="0" width="245" height="30" uuid="735146cc-c12b-4c4b-80ad-d83996dcbb2f"/>
+											<textElement textAlignment="Center" verticalAlignment="Middle">
+												<font size="14"/>
+											</textElement>
+											<textFieldExpression><![CDATA[$F{drug}]]></textFieldExpression>
+										</textField>
+									</jr:detailCell>
+								</jr:column>
+							</jr:columnGroup>
+						</jr:columnGroup>
+					</jr:columnGroup>
+				</jr:table>
+			</componentElement>
+		</band>
+	</detail>
+</jasperReport>
